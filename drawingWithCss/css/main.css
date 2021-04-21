@@ -1,0 +1,161 @@
+:root {
+  --color-1: rgb(255, 79, 79);
+  --color-1-alpha: rgba(255, 79, 79, 0);
+  --color-2: rgb(253, 175, 108);
+  --color-2-alpha: rgba(253, 175, 108, 0);
+  --color-3: rgb(233, 254, 154);
+  --color-3-alpha: rgba(233, 254, 154, 0);
+  --color-4: rgb(250, 253, 255);
+  --color-4-alpha: rgba(250, 253, 255, 0);
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #222222;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.btn-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  gap: 1em;
+  position: relative;
+  padding-top: 3em;
+}
+
+.btn-container .button {
+  background: gray;
+  height: 80px;
+  padding: 1.5em;
+  cursor: pointer;
+  border-radius: 0.2em;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+}
+
+.btn-container .button:nth-child(1), .btn-container .button:nth-child(2), .btn-container .button:nth-child(3), .btn-container .button:nth-child(4) {
+  background: var(--color-1) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-1) 70%);
+  -webkit-box-shadow: inset 9px 9px 0 -7px var(--color-1), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 9px 9px 0 -7px var(--color-1), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-1-alpha), white, var(--color-1-alpha)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-1-alpha)), color-stop(white), to(var(--color-1-alpha))) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-1-alpha), white, var(--color-1-alpha)) 1 100%;
+}
+
+.btn-container .button:nth-child(5), .btn-container .button:nth-child(6), .btn-container .button:nth-child(7), .btn-container .button:nth-child(8) {
+  background: var(--color-2) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-2) 70%);
+  -webkit-box-shadow: inset 9px 9px 0 -7px var(--color-2), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 9px 9px 0 -7px var(--color-2), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-2-alpha), white, var(--color-2-alpha)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-2-alpha)), color-stop(white), to(var(--color-2-alpha))) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-2-alpha), white, var(--color-2-alpha)) 1 100%;
+}
+
+.btn-container .button:nth-child(9), .btn-container .button:nth-child(10), .btn-container .button:nth-child(11), .btn-container .button:nth-child(12) {
+  background: var(--color-3) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-3) 70%);
+  -webkit-box-shadow: inset 9px 9px 0 -7px var(--color-3), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 9px 9px 0 -7px var(--color-3), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-3-alpha), white, var(--color-3-alpha)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-3-alpha)), color-stop(white), to(var(--color-3-alpha))) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-3-alpha), white, var(--color-3-alpha)) 1 100%;
+}
+
+.btn-container .button:nth-child(13), .btn-container .button:nth-child(14), .btn-container .button:nth-child(15), .btn-container .button:nth-child(16) {
+  background: var(--color-4) radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, var(--color-4) 70%);
+  -webkit-box-shadow: inset 9px 9px 0 -7px var(--color-4), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 9px 9px 0 -7px var(--color-4), inset -8px -8px 0 -7px rgba(255, 255, 255, 0.3), -2px -2px 2px 0 rgba(0, 0, 0, 0.2), -10px -10px 7px 2px rgba(0, 0, 0, 0.1);
+  -o-border-image: linear-gradient(to bottom, var(--color-4-alpha), white, var(--color-4-alpha)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-4-alpha)), color-stop(white), to(var(--color-4-alpha))) 1 100%;
+     border-image: linear-gradient(to bottom, var(--color-4-alpha), white, var(--color-4-alpha)) 1 100%;
+}
+
+.btn-container .button:before {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -2em;
+  left: 0;
+  color: gray;
+}
+
+.btn-container .button:nth-child(1):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(2):before {
+  content: 'SD';
+}
+
+.btn-container .button:nth-child(3):before {
+  content: 'LT';
+}
+
+.btn-container .button:nth-child(4):before {
+  content: 'HC';
+}
+
+.btn-container .button:nth-child(5):before {
+  content: 'CH';
+}
+
+.btn-container .button:nth-child(6):before {
+  content: 'CH';
+}
+
+.btn-container .button:nth-child(7):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(8):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(9):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(10):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(11):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(12):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(13):before {
+  content: 'NR';
+}
+
+.btn-container .button:nth-child(14):before {
+  content: 'NR';
+}
+
+.btn-container:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background: repeating-linear-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 10%, #222222 10%, #222222 20%);
+}
+/*# sourceMappingURL=main.css.map */

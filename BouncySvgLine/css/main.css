@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #1d1d1d;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+}
+
+svg path {
+  stroke: white;
+  fill: none;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  pointer-events: none;
+}
+
+h1:before {
+  content: 'WOBBLY';
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  font-size: 20rem;
+  color: #202020;
+  z-index: -2;
+}
+/*# sourceMappingURL=main.css.map */

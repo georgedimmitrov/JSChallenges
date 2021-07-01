@@ -1,0 +1,24 @@
+label {
+  font-size: 18px;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.eye-container {
+  position: absolute;
+  left: 190px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
